@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { IoMenu } from "react-icons/io5"
 import { Link } from "react-router-dom"
 const Navbar = () => {
-    const [innerWidth, setinnerWidth] = useState<number>(0)
+    const [innerWidth, setinnerWidth] = useState<number>(window.innerWidth)
     const [showNav, setShowNav] = useState<boolean>(false)
 
     function handleNav() {
