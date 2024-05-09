@@ -37,7 +37,7 @@ const Footer = () => {
                     <form action="#" className="subscribe-form">
                         <div className="form-group flex">
                             <input type="text" className="px-3 rounded-left w-[80%] sm:w-auto" placeholder="Enter email address"/>
-                            <button type="submit" className="submit rounded-right w-[20%] sm:w-auto flex justify-center items-center"><FaPaperPlane /></button>
+                            <button type="submit" className="submit rounded-right w-[20%] sm:w-auto relative"><FaPaperPlane className="absolute top-[34%] left-[34%]"/></button>
                         </div>
                     </form>
                     <h2 className="footer-heading mt-5">Follow us</h2>

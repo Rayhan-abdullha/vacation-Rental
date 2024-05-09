@@ -33,10 +33,10 @@ const Navbar = () => {
                 </div>
                 <div className={`${(showNav && (innerWidth < 1024)) || (!showNav && innerWidth > 1024 || innerWidth === 0) ? 'block':'hidden'} mt-5 lg:mt-0`}>
                     <ul className={`flex flex-col lg:flex-row gap-5 lg:gap-10`}>
-                        <li className=""><Link to="index.html" className="nav-item active lg:py-[32px] text-[15px] block text-[#4d4d4d]">Home</Link></li>
+                        <li className=""><Link to="/" className="nav-item active lg:py-[32px] text-[15px] block text-[#4d4d4d]">Home</Link></li>
                         <li className=""><Link to="/about" className="nav-item lg:py-[32px] text-[15px] block text-[#4d4d4d]">About</Link></li>
                         <li className=""><Link to="/services" className="nav-item lg:py-[32px] text-[15px] block text-[#4d4d4d]">Services</Link></li>
-                        <li className=""><Link to="/rooms" className="nav-item lg:py-[32px] text-[15px] block text-[#4d4d4d]">Apartment Room</Link></li>
+                        <li className=""><Link to="/apartment-room" className="nav-item lg:py-[32px] text-[15px] block text-[#4d4d4d]">Apartment Room</Link></li>
                         <li className=""><Link to="/blog" className="nav-item lg:py-[32px] text-[15px] block text-[#4d4d4d]">Blog</Link></li>
                         <li className=""><Link to="/contact" className="nav-item lg:py-[32px] text-[15px] block text-[#4d4d4d]">Contact</Link></li>
                     </ul>
