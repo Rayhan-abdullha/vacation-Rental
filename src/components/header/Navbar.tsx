@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { FaBoxOpen } from "react-icons/fa"
+import { IoMenu } from "react-icons/io5"
 import { Link } from "react-router-dom"
 const Navbar = () => {
     const [innerWidth, setinnerWidth] = useState<number>(0)
@@ -26,10 +26,10 @@ const Navbar = () => {
             <nav className="my-container lg:flex lg:justify-between items-center gap-5 relative">
                 <div className="flex justify-between">
                     <Link className="text-[24px] font-bold text-[#000000] leading-[1]" to="/">Vacation<span className="text-2 color-2">Rental</span></Link>
-                    <button onClick={handleNav} className="blcok lg:hidden flex items-center gap-2">
-                        <FaBoxOpen className="text-[20px]" />
-                        <span className="text-[16px]">MENU</span>
-                </button>
+                    <button onClick={handleNav} className="blcok lg:hidden flex items-center gap-1">
+                        <IoMenu className="text-[22px] font-bold mt-[-2px]" />
+                        <span className="text-[16px]" style={{letterSpacing: "2px"}}>MENU</span>
+                    </button>
                 </div>
                 <div className={`${(showNav && (innerWidth < 1024)) || (!showNav && innerWidth > 1024 || innerWidth === 0) ? 'block':'hidden'} mt-5 lg:mt-0`}>
                     <ul className={`flex flex-col lg:flex-row gap-5 lg:gap-10`}>
