@@ -5,7 +5,7 @@ const SecondHeroSection = () => {
     const location = useLocation()
     const pathName = location.pathname.slice(1, location.pathname.length)
     return (
-        <div className='bg-cover h-[400px] lg:bg-fixed relative b' style={{ backgroundImage: `url(${bg2})`, backgroundPosition: '0% 52px'}}>
+        <div className='hero-secondary bg-cover bg-no-repeat h-[400px] lg:bg-fixed relative b' style={{ backgroundImage: `url(${bg2})`}}>
             <div className='overlay opacity-[.2] bg-[#000000]'></div>
             <div className='flex justify-center items-center h-[400px]'>
                 <div className='hero-text z-[9]' data-aos="fade-up">
