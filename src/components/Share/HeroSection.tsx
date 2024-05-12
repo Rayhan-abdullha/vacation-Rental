@@ -8,7 +8,7 @@ const SecondHeroSection = () => {
         <div className='bg-cover h-[400px] lg:bg-fixed relative b' style={{ backgroundImage: `url(${bg2})`, backgroundPosition: '0% 52px'}}>
             <div className='overlay opacity-[.2] bg-[#000000]'></div>
             <div className='flex justify-center items-center h-[400px]'>
-                <div className='hero-text z-[9]'>
+                <div className='hero-text z-[9]' data-aos="fade-up">
                     <ul className='flex gap-3 justify-center'>
                         <li className='hover:text-[#fd7792] flex items-center'>
                             <Link className='text-[16px] capitalize font-semibold hover:text-[#fd7792]' style={{ color: 'rgba(255, 255, 255, 0.7)' }} to="/">Home</Link>

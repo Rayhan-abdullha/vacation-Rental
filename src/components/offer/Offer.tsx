@@ -13,7 +13,7 @@ const Offer = () => {
                         </div>
                     </div>
                 </section>
-                <section className='md:basis-[50%]'>
+                <section className='md:basis-[50%]' data-aos="fade-up">
                     <div className="mb-3">
                         <h2 className="mb-3 text-[28px] md:text-[54px] font-family-secondary text-[#000000]">What we offer</h2>
                         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>

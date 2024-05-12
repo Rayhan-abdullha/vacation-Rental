@@ -41,7 +41,7 @@ const Footer = () => {
                         </div>
                     </form>
                     <h2 className="footer-heading mt-5">Follow us</h2>
-                    <ul className="ftco-footer-social flex gap-4 p-0">
+                    <ul className="ftco-footer-social flex gap-4 p-0" data-aos="flip-down">
                         <li className="">
                             <Link to="#" className="block p-3 text-[18px]">
                                 <FaTwitter/>

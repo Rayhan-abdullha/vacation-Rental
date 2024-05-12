@@ -1,9 +1,18 @@
 import { useEffect, useState } from "react"
 import { IoMenu } from "react-icons/io5"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
+const navItems = [
+    { id: 1, text: 'Home', href: '/' },
+    { id: 2, text: 'About', href: '/about' },
+    { id: 3, text: 'Services', href: '/services' },
+    { id: 4, text: 'Apartment-Rooms', href: '/apartment-rooms' },
+    { id: 5, text: 'Blog', href: '/blog' },
+    { id: 6, text: 'Contact', href: '/contact' },
+]
 const Navbar = () => {
     const [innerWidth, setinnerWidth] = useState<number>(window.innerWidth)
     const [showNav, setShowNav] = useState<boolean>(false)
+    const path = useLocation()
 
     function handleNav() {
         setShowNav(prev => !prev)
@@ -33,12 +42,14 @@ const Navbar = () => {
                 </div>
                 <div className={`${(showNav && (innerWidth < 1024)) || (!showNav && innerWidth > 1024 || innerWidth === 0) ? 'block':'hidden'} mt-5 lg:mt-0`}>
                     <ul className={`flex flex-col lg:flex-row gap-5 lg:gap-10`}>
-                        <li className=""><Link to="/" className="nav-item active lg:py-[32px] text-[15px] block text-[#4d4d4d]">Home</Link></li>
-                        <li className=""><Link to="/about" className="nav-item lg:py-[32px] text-[15px] block text-[#4d4d4d]">About</Link></li>
-                        <li className=""><Link to="/services" className="nav-item lg:py-[32px] text-[15px] block text-[#4d4d4d]">Services</Link></li>
-                        <li className=""><Link to="/apartment-room" className="nav-item lg:py-[32px] text-[15px] block text-[#4d4d4d]">Apartment Room</Link></li>
-                        <li className=""><Link to="/blog" className="nav-item lg:py-[32px] text-[15px] block text-[#4d4d4d]">Blog</Link></li>
-                        <li className=""><Link to="/contact" className="nav-item lg:py-[32px] text-[15px] block text-[#4d4d4d]">Contact</Link></li>
+                        {
+                            navItems.map(item => (
+                                
+                                <li className="" key={item.id}>
+                                    <Link to={`${item.href}`} className={`nav-item ${path.pathname === '/' && item.id === 1 && 'active'} ${path.pathname.toString() === `/${item.text.toLocaleLowerCase() }`? 'active' : ''} lg:py-[32px] text-[15px] block text-[#4d4d4d] hover:text-[#fd7792] transition-all duration-500`}>{item.text}</Link>
+                                </li>
+                            ))
+                        }
                     </ul>
                 </div>
             </nav>

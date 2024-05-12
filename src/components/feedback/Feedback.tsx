@@ -27,10 +27,10 @@ const Feedback = () => {
         <section className="bg-light py-[110px]">
             <div className="my-container">
                 <div className="text-center pb-[50px]">
-                    <h2 className='text-[28px] md:text-[54px] text-[#000000]' style={{fontFamily: "Playfair Display, serif"}}>Happy Clients &amp; Feedbacks</h2>
+                    <h2 data-aos="fade-up" className='text-[28px] md:text-[54px] text-[#000000]' style={{fontFamily: "Playfair Display, serif"}}>Happy Clients &amp; Feedbacks</h2>
                 </div>
                 
-                <div className="relative">
+                <div className="relative" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="400">
                     <Carousel
                         showArrows={false}
                         showStatus={false}

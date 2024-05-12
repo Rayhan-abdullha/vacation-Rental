@@ -6,14 +6,15 @@ const News = () => {
   return (
       <div className="bg-light py-[110px]">
         <section className="my-container">
-          <div className="text-center pb-[50px]">
+          <div className="text-center pb-[50px]" data-aos="fade-down">
               <h2 className='text-[28px] md:text-[54px] text-[#000000]' style={{fontFamily: "Playfair Display, serif"}}>Latest news from our blog</h2>
               <span className="text-[12px] block font-semibold uppercase color-2 tracking-[2px]">News &amp; Blog</span>
           </div>
-          <div className='grid gap-7 grid-cols-1 md:grid-cols-3'>
+          <div className='grid gap-7 grid-cols-1 md:grid-cols-3' data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
               {
-                [1, 2, 3].map(() => (
-                  <div className="" style={{boxShadow: 'rgba(0, 0, 0, 0.11) 0px 10px 27px -9px;'}}>
+                [1, 2, 3].map((item) => (
+                  <div style={{boxShadow: 'rgba(0, 0, 0, 0.11) 0px 10px 27px -9px;'}} key={item}>
                     <div className="h-[300px] cursor-pointer rounded-md" style={{backgroundImage: `url(${service_img})`, backgroundPosition: 'center'}}></div>
                     <div className="bg-white text-center rounded-md">
                       <div className='py-10 px-5'>
