@@ -14,7 +14,7 @@ const News = () => {
      data-aos-anchor-placement="center-bottom">
               {
                 [1, 2, 3].map((item) => (
-                  <div style={{boxShadow: 'rgba(0, 0, 0, 0.11) 0px 10px 27px -9px;'}} key={item}>
+                  <div style={{boxShadow: 'rgba(0, 0, 0, 0.11) 0px 10px 27px -9px'}} key={item}>
                     <div className="h-[300px] cursor-pointer rounded-md" style={{backgroundImage: `url(${service_img})`, backgroundPosition: 'center'}}></div>
                     <div className="bg-white text-center rounded-md">
                       <div className='py-10 px-5'>

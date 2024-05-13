@@ -42,7 +42,16 @@ body {
   background: #f3f4f7
 }
 .active {
-  color: #fd7792
+  color: #fd7792;
+}
+.active::after{
+  content: "";
+  position: absolute;
+  width: 115%;
+  height: 3px;
+  bottom: 0px;
+  left: -5px;
+  background-color: #fd7792;
 }
 .pg-active {
   background: #fd7792;
@@ -75,6 +84,33 @@ body {
   right: 0;
   bottom: 0;
   content: '';
+}
+/* nav */
+.navItem::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #fd7792;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+@media (min-width: 1024px) {
+  .navItem:hover::before {
+    visibility: visible;
+    background-color: #fd7792;
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+  }
 }
 /* hero */
 .hero-wrap {

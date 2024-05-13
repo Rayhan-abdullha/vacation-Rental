@@ -46,7 +46,7 @@ const Navbar = () => {
                             navItems.map(item => (
                                 
                                 <li className="" key={item.id}>
-                                    <Link to={`${item.href}`} className={`nav-item ${path.pathname === '/' && item.id === 1 && 'active'} ${path.pathname.toString() === `/${item.text.toLocaleLowerCase() }`? 'active' : ''} lg:py-[32px] text-[15px] block text-[#4d4d4d] hover:text-[#fd7792] transition-all duration-500`}>{item.text}</Link>
+                                    <Link to={`${item.href}`} className={`navItem nav-item ${path.pathname === '/' && item.id === 1 && 'active'} ${path.pathname.toString() === `/${item.text.toLocaleLowerCase() }`? 'active' : ''} lg:py-[32px] text-[15px] block text-[#4d4d4d] hover:text-[#fd7792] relative transition-all duration-500`}>{item.text}</Link>
                                 </li>
                             ))
                         }
