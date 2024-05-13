@@ -5,14 +5,14 @@ function BookAppertment() {
     <form className='flex flex-col gap-5 p-[35px] mb-2 lg:mb-0' style={{boxShadow: "0px 15px 34px -29px rgba(0, 0, 0, 0.54)"}}>
         <h3 className='text-[28px] font-family-secondary' style={{color: 'rgba(0, 0, 0, 0.8)'}}>Book your apartment</h3>
             <div className="">
-                <input className="form-control" type="text" placeholder="Full Name"/>
+                <input className="form-control placeholder-[#000000]" type="text" placeholder="Full Name"/>
             </div>   
             <div className="grid md:grid-cols-2 gap-5">
                 <div className="">
-                    <input className="form-control" type="text" placeholder="Check-In"/>
-                </div>
+                    <input className="form-control placeholder-[#000000]" type="text" placeholder="Check-In"/>
+                </div> 
                 <div className="">
-                    <input className="form-control" type="text" placeholder="Check-Out"/>
+                    <input className="form-control placeholder-[#000000]" type="text" placeholder="Check-Out"/>
                 </div>
                 <div className="relative">
                 <select className="form-control appearance-none cursor-pointer">
@@ -41,10 +41,10 @@ function BookAppertment() {
                 </div>
             </div>
             <div>
-                <input className="form-control" type="text" placeholder="Phone number"/>
+                <input className="form-control placeholder-[#000000]" type="text" placeholder="Phone number"/>
             </div>
             <div>
-                <input className="form-control" type="text" placeholder="Time"/>
+                <input className="form-control placeholder-[#000000]" type="text" placeholder="Time"/>
             </div>
         </div>
             <input className='btn btn-primary font-medium text-center' type="submit" value="Book Appartment Now"/>
