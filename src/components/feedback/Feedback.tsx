@@ -24,7 +24,7 @@ const Feedback = () => {
         }
     }, [innderWidth])
     return (
-        <section className="bg-light py-[110px]">
+        <section className="bg-light py-[50px] md:py-[110px]">
             <div className="my-container">
                 <div className="text-center pb-[50px]">
                     <h2 data-aos="fade-up" className='text-[28px] md:text-[54px] text-[#000000]' style={{fontFamily: "Playfair Display, serif"}}>Happy Clients &amp; Feedbacks</h2>

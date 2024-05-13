@@ -44,15 +44,6 @@ body {
 .active {
   color: #fd7792;
 }
-.active::after{
-  content: "";
-  position: absolute;
-  width: 115%;
-  height: 3px;
-  bottom: 0px;
-  left: -5px;
-  background-color: #fd7792;
-}
 .pg-active {
   background: #fd7792;
   color: white
@@ -110,6 +101,15 @@ body {
     -webkit-transform: scaleX(1);
     -ms-transform: scaleX(1);
     transform: scaleX(1);
+  }
+  .active::after{
+    content: "";
+    position: absolute;
+    width: 115%;
+    height: 3px;
+    bottom: 0px;
+    left: -5px;
+    background-color: #fd7792;
   }
 }
 /* hero */
